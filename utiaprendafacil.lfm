@@ -1,13 +1,53 @@
-object Form1: TForm1
+object FrmTiAprendaFacil: TFrmTiAprendaFacil
   Left = 265
   Height = 600
   Top = 46
   Width = 800
   Caption = 'TI - Aprenda Fácil'
+  ClientHeight = 600
+  ClientWidth = 800
   Font.CharSet = ANSI_CHARSET
-  Font.Height = -16
+  Font.Height = -13
   Font.Name = 'Segoe UI'
   Font.Style = [fsItalic]
   Position = poWorkAreaCenter
   LCLVersion = '2.0.6.0'
+  object TbCtrlTiAprendaFacil: TTabControl
+    Left = 0
+    Height = 600
+    Top = 0
+    Width = 800
+    TabIndex = 0
+    Tabs.Strings = (
+      'Atividade 1'
+    )
+    Align = alClient
+    TabOrder = 0
+    object RBtnMasculino: TRadioButton
+      Left = 159
+      Height = 21
+      Top = 117
+      Width = 84
+      Caption = ' Masculino '
+      Checked = True
+      TabOrder = 3
+      TabStop = True
+    end
+    object RBtnFeminino: TRadioButton
+      Left = 159
+      Height = 21
+      Top = 184
+      Width = 78
+      Caption = ' Feminino '
+      TabOrder = 1
+    end
+    object BtnMostrar: TButton
+      Left = 159
+      Height = 25
+      Top = 306
+      Width = 75
+      Caption = ' Mostrar '
+      TabOrder = 2
+    end
+  end
 end

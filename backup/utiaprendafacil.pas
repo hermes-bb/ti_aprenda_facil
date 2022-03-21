@@ -5,10 +5,17 @@ unit utiaprendafacil;
 interface
 
 uses
-  Classes, SysUtils, Forms, Controls, Graphics, Dialogs;
+  Classes, SysUtils, Forms, Controls, Graphics, Dialogs, ComCtrls, StdCtrls;
 
 type
-  TForm1 = class(TForm)
+
+  { TFrmTiAprendaFacil }
+
+  TFrmTiAprendaFacil = class(TForm)
+    BtnMostrar: TButton;
+    RBtnMasculino: TRadioButton;
+    RBtnFeminino: TRadioButton;
+    TbCtrlTiAprendaFacil: TTabControl;
   private
 
   public
@@ -16,7 +23,7 @@ type
   end;
 
 var
-  Form1: TForm1;
+  FrmTiAprendaFacil: TFrmTiAprendaFacil;
 
 implementation
 
